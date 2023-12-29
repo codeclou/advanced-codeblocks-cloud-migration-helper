@@ -7,7 +7,7 @@
 This migration helper transforms a Server/DataCenter Confluence page in <a href="https://confluence.atlassian.com/doc/confluence-storage-format-790796544.html">Storage Format</a> to
 Cloud Confluence Storage Format. It will convert the <a href="https://marketplace.atlassian.com/apps/1211159/advanced-codeblocks-for-confluence?hosting=datacenter&tab=overview">Advanced Codeblocks for Confluence</a> macros to their Cloud forge app equivalent.
 
-- :book: **[Read the complete migration guide here](https://codeclou.github.io/advanced-codeblocks-cloud-migration-helper)**
+- :book: **[Read the complete migration guide here](https://codeclou.io/advanced-codeblocks-for-confluence/cloud/admin-guide/migration/)**
 
 For example a Data Center Confluence page containing the Advanced Codeblocks Single Macro will look like this:
 
@@ -151,5 +151,3 @@ pytest
 ### License
 
 [MIT](./LICENSE) © [codeclou GmbH](https://github.com/codeclou)
-
-

@@ -17,7 +17,7 @@ parser.add_argument("-if", "--inputfile", dest="inputfile",
 parser.add_argument("-of", "--outputfile", dest="outputfile",
                     help="the outputfile, a confluence page in storage format XML", metavar="OUTPUTFILE", required=True)
 parser.add_argument("-ek", "--extension-key", dest="extensionkey",
-                    help="the extension key, TODO ", metavar="EXTENSIONKEY", required=True)
+                    help="the extension key, is unique to your installation, see the online documentation for more info", metavar="EXTENSIONKEY", required=True)
 args = parser.parse_args()
 
 #
