@@ -1,0 +1,5 @@
+uuid7==0.1.0
+beautifulsoup4==4.12.2
+pytest==7.4.3
+pytest_cov==4.1.0
+lxml==4.9.4

@@ -1,0 +1,18 @@
+
+<table class="wrapped"><colgroup> <col /> <col /> </colgroup>
+<tbody>
+<tr>
+<th scope="col">Hello</th>
+<th scope="col">Table</th></tr>
+<tr>
+<td>foo</td>
+<td>
+<div class="content-wrapper"><ac:structured-macro ac:name="code" ac:schema-version="1" ac:macro-id="3b2a2c57-ef21-41b6-b943-d71dd1672efd"><ac:parameter ac:name="language">bash</ac:parameter><ac:parameter ac:name="theme">DJango</ac:parameter><ac:parameter ac:name="title">Simple Code</ac:parameter><ac:parameter ac:name="linenumbers">true</ac:parameter><ac:plain-text-body><![CDATA[foo = bar]]></ac:plain-text-body></ac:structured-macro></div></td></tr>
+<tr>
+<td>blubb</td>
+<td>fo emoji <ac:emoticon ac:name="grinning face with smiling eyes" ac:emoji-id="1f604" /> bar</td></tr>
+<tr>
+<td>bla</td>
+<td>
+<div class="content-wrapper"><ac:structured-macro ac:name="advanced-single-codeblock-macro" ac:schema-version="1" ac:macro-id="0a76fb27-ee70-41a4-bead-063a0908804d"><ac:parameter ac:name="enableddl">true</ac:parameter><ac:parameter ac:name="theme">light-mono</ac:parameter><ac:parameter ac:name="lang">Bash</ac:parameter><ac:parameter ac:name="globaltitle">test</ac:parameter><ac:plain-text-body><![CDATA[echo "foo"]]></ac:plain-text-body></ac:structured-macro></div></td></tr></tbody></table>
+<p><br /></p>

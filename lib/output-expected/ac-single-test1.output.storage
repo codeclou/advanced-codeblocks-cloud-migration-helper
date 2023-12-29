@@ -1,0 +1,75 @@
+<table class="wrapped">
+ <colgroup>
+  <col/>
+  <col/>
+ </colgroup>
+ <tbody>
+  <tr>
+   <th scope="col">
+    Hello
+   </th>
+   <th scope="col">
+    Table
+   </th>
+  </tr>
+  <tr>
+   <td>
+    foo
+   </td>
+   <td>
+    <div class="content-wrapper">
+     <ac:structured-macro ac:macro-id="3b2a2c57-ef21-41b6-b943-d71dd1672efd" ac:name="code" ac:schema-version="1">
+      <ac:parameter ac:name="language">bash</ac:parameter>
+      <ac:parameter ac:name="theme">DJango</ac:parameter>
+      <ac:parameter ac:name="title">Simple Code</ac:parameter>
+      <ac:parameter ac:name="linenumbers">true</ac:parameter>
+      <ac:plain-text-body>
+       <![CDATA[foo = bar]]>
+      </ac:plain-text-body>
+     </ac:structured-macro>
+    </div>
+   </td>
+  </tr>
+  <tr>
+   <td>
+    blubb
+   </td>
+   <td>
+    fo emoji
+    <ac:emoticon ac:emoji-id="1f604" ac:name="grinning face with smiling eyes">
+    </ac:emoticon>
+    bar
+   </td>
+  </tr>
+  <tr>
+   <td>
+    bla
+   </td>
+   <td>
+    <div class="content-wrapper">
+     <ac:adf-extension>
+      <ac:adf-node type="extension">
+       <ac:adf-attribute key="extension-type">com.atlassian.ecosystem</ac:adf-attribute>
+       <ac:adf-attribute key="extension-key">9a81c16f-31e6-4be7-be6e-dfc872fe4155/35d2082a-431b-46b7-90da-75a526882f2f/static/advancedsinglecodeblockmacro</ac:adf-attribute>
+       <ac:adf-attribute key="parameters"><ac:adf-parameter key="local-id">00000000-0000-0000-0000-000000000000</ac:adf-parameter><ac:adf-parameter key="extension-id">ari:cloud:ecosystem::extension/9a81c16f-31e6-4be7-be6e-dfc872fe4155/35d2082a-431b-46b7-90da-75a526882f2f/static/advancedsinglecodeblockmacro</ac:adf-parameter><ac:adf-parameter key="extension-title">Advanced Codeblocks Single</ac:adf-parameter><ac:adf-parameter key="guest-params"><ac:adf-parameter key="globaltitle">test</ac:adf-parameter><ac:adf-parameter key="code"><![CDATA[echo "foo"]]></ac:adf-parameter><ac:adf-parameter key="enableddl"><ac:adf-parameter-value>true</ac:adf-parameter-value></ac:adf-parameter><ac:adf-parameter key="theme">light-mono</ac:adf-parameter><ac:adf-parameter key="lang">bash</ac:adf-parameter></ac:adf-parameter></ac:adf-attribute>
+       <ac:adf-attribute key="text">Advanced Codeblocks Single</ac:adf-attribute>
+       <ac:adf-attribute key="layout">default</ac:adf-attribute>
+       <ac:adf-attribute key="local-id">00000000-0000-0000-0000-000000000000</ac:adf-attribute>
+      </ac:adf-node>
+      <ac:adf-fallback>
+       <ac:adf-node type="extension">
+        <ac:adf-attribute key="extension-type">com.atlassian.ecosystem</ac:adf-attribute>
+        <ac:adf-attribute key="extension-key">9a81c16f-31e6-4be7-be6e-dfc872fe4155/35d2082a-431b-46b7-90da-75a526882f2f/static/advancedsinglecodeblockmacro</ac:adf-attribute>
+        <ac:adf-attribute key="parameters"><ac:adf-parameter key="local-id">00000000-0000-0000-0000-000000000000</ac:adf-parameter><ac:adf-parameter key="extension-id">ari:cloud:ecosystem::extension/9a81c16f-31e6-4be7-be6e-dfc872fe4155/35d2082a-431b-46b7-90da-75a526882f2f/static/advancedsinglecodeblockmacro</ac:adf-parameter><ac:adf-parameter key="extension-title">Advanced Codeblocks Single</ac:adf-parameter><ac:adf-parameter key="guest-params"><ac:adf-parameter key="globaltitle">test</ac:adf-parameter><ac:adf-parameter key="code"><![CDATA[echo "foo"]]></ac:adf-parameter><ac:adf-parameter key="enableddl"><ac:adf-parameter-value>true</ac:adf-parameter-value></ac:adf-parameter><ac:adf-parameter key="theme">light-mono</ac:adf-parameter><ac:adf-parameter key="lang">bash</ac:adf-parameter></ac:adf-parameter></ac:adf-attribute>
+        <ac:adf-attribute key="text">Advanced Codeblocks Single</ac:adf-attribute>
+        <ac:adf-attribute key="layout">default</ac:adf-attribute>
+        <ac:adf-attribute key="local-id">00000000-0000-0000-0000-000000000000</ac:adf-attribute>
+       </ac:adf-node>
+      </ac:adf-fallback>
+     </ac:adf-extension>
+    </div>
+   </td>
+  </tr>
+ </tbody>
+</table>
+<p><br/></p>

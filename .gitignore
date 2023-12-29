@@ -1,0 +1,6 @@
+.pytest_cache
+__pycache__
+lib/output/*
+!lib/output/.gitkeep
+.coverage
+.DS_Store

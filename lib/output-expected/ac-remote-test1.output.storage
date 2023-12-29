@@ -1,0 +1,24 @@
+<p>remote</p>
+<ac:adf-extension>
+ <ac:adf-node type="extension">
+  <ac:adf-attribute key="extension-type">com.atlassian.ecosystem</ac:adf-attribute>
+  <ac:adf-attribute key="extension-key">9a81c16f-31e6-4be7-be6e-dfc872fe4155/35d2082a-431b-46b7-90da-75a526882f2f/static/advancedremotecodeblockmacro</ac:adf-attribute>
+  <ac:adf-attribute key="parameters"><ac:adf-parameter key="local-id">00000000-0000-0000-0000-000000000000</ac:adf-parameter><ac:adf-parameter key="extension-id">ari:cloud:ecosystem::extension/9a81c16f-31e6-4be7-be6e-dfc872fe4155/35d2082a-431b-46b7-90da-75a526882f2f/static/advancedremotecodeblockmacro</ac:adf-parameter><ac:adf-parameter key="extension-title">Advanced Codeblocks Multi Remote</ac:adf-parameter><ac:adf-parameter key="guest-params"><ac:adf-parameter key="globaltitle">remotey</ac:adf-parameter><ac:adf-parameter key="config"><![CDATA[[test a]
+foo = bar]]></ac:adf-parameter><ac:adf-parameter key="expandfirst"><ac:adf-parameter-value>true</ac:adf-parameter-value></ac:adf-parameter><ac:adf-parameter key="remotefileurl">https://codeclou.io/file.py</ac:adf-parameter><ac:adf-parameter key="remotefilehttpuser">user</ac:adf-parameter><ac:adf-parameter key="remotefilehttppassword">pass</ac:adf-parameter><ac:adf-parameter key="theme">light-spring</ac:adf-parameter><ac:adf-parameter key="lang">apache</ac:adf-parameter></ac:adf-parameter></ac:adf-attribute>
+  <ac:adf-attribute key="text">Advanced Codeblocks Multi Remote</ac:adf-attribute>
+  <ac:adf-attribute key="layout">default</ac:adf-attribute>
+  <ac:adf-attribute key="local-id">00000000-0000-0000-0000-000000000000</ac:adf-attribute>
+ </ac:adf-node>
+ <ac:adf-fallback>
+  <ac:adf-node type="extension">
+   <ac:adf-attribute key="extension-type">com.atlassian.ecosystem</ac:adf-attribute>
+   <ac:adf-attribute key="extension-key">9a81c16f-31e6-4be7-be6e-dfc872fe4155/35d2082a-431b-46b7-90da-75a526882f2f/static/advancedremotecodeblockmacro</ac:adf-attribute>
+   <ac:adf-attribute key="parameters"><ac:adf-parameter key="local-id">00000000-0000-0000-0000-000000000000</ac:adf-parameter><ac:adf-parameter key="extension-id">ari:cloud:ecosystem::extension/9a81c16f-31e6-4be7-be6e-dfc872fe4155/35d2082a-431b-46b7-90da-75a526882f2f/static/advancedremotecodeblockmacro</ac:adf-parameter><ac:adf-parameter key="extension-title">Advanced Codeblocks Multi Remote</ac:adf-parameter><ac:adf-parameter key="guest-params"><ac:adf-parameter key="globaltitle">remotey</ac:adf-parameter><ac:adf-parameter key="config"><![CDATA[[test a]
+foo = bar]]></ac:adf-parameter><ac:adf-parameter key="expandfirst"><ac:adf-parameter-value>true</ac:adf-parameter-value></ac:adf-parameter><ac:adf-parameter key="remotefileurl">https://codeclou.io/file.py</ac:adf-parameter><ac:adf-parameter key="remotefilehttpuser">user</ac:adf-parameter><ac:adf-parameter key="remotefilehttppassword">pass</ac:adf-parameter><ac:adf-parameter key="theme">light-spring</ac:adf-parameter><ac:adf-parameter key="lang">apache</ac:adf-parameter></ac:adf-parameter></ac:adf-attribute>
+   <ac:adf-attribute key="text">Advanced Codeblocks Multi Remote</ac:adf-attribute>
+   <ac:adf-attribute key="layout">default</ac:adf-attribute>
+   <ac:adf-attribute key="local-id">00000000-0000-0000-0000-000000000000</ac:adf-attribute>
+  </ac:adf-node>
+ </ac:adf-fallback>
+</ac:adf-extension>
+<p><br/></p>

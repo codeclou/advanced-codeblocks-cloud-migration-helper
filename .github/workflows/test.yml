@@ -1,0 +1,39 @@
+name: build
+on: [push]
+jobs:
+  test-and-run:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.9", "3.10", "3.11", "3.12"]
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v4
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Display Python version
+        run: python -c "import sys; print(sys.version)"
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+      - name: unit tests
+        run: pytest
+      - name: code coverage
+        run: pytest --cov=lib lib/
+      - name: convert single
+        run: |
+          python3 index.py -ek 9a81c16f-31e6-4be7-be6e-dfc872fe4155/35d2082a-431b-46b7-90da-75a526882f2f \
+                 -if ./lib/input/ac-single-test1.input.storage \
+                 -of ./lib/output/ac-single-test1.output.storage
+      - name: convert multi
+        run: |
+          python3 index.py -ek 9a81c16f-31e6-4be7-be6e-dfc872fe4155/35d2082a-431b-46b7-90da-75a526882f2f \
+                 -if ./lib/input/ac-multi-test1.input.storage \
+                 -of ./lib/output/ac-multi-test1.output.storage
+      - name: convert remote
+        run: |
+          python3 index.py -ek 9a81c16f-31e6-4be7-be6e-dfc872fe4155/35d2082a-431b-46b7-90da-75a526882f2f \
+                 -if ./lib/input/ac-remote-test1.input.storage \
+                 -of ./lib/output/ac-remote-test1.output.storage
