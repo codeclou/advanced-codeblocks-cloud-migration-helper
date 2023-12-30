@@ -65,7 +65,7 @@ The Cloud App equivalent will look like this:
 ```
 git clone https://github.com/codeclou/advanced-codeblocks-cloud-migration-helper.git
 cd advanced-codeblocks-cloud-migration-helper
-pip3 install -r requirements.txt
+python3 -m pip install -r requirements.txt
 ```
 
 &nbsp;
