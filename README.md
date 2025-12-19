@@ -66,6 +66,10 @@ The Cloud App equivalent will look like this:
 git clone https://github.com/codeclou/advanced-codeblocks-cloud-migration-helper.git
 cd advanced-codeblocks-cloud-migration-helper
 python3 -m pip install -r requirements.txt
+# or
+python3 -m venv ./acm
+source ./acm/bin/activate
+python3 -m pip install -r requirements.txt
 ```
 
 &nbsp;

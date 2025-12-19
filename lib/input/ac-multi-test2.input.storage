@@ -2,7 +2,7 @@
 <p>test123</p><ac:structured-macro ac:name="advanced-codeblock-macro" ac:schema-version="1" ac:macro-id="544fd4da-43cf-4d4b-b675-34ee3cb50000"><ac:parameter ac:name="enableddl">true</ac:parameter><ac:parameter ac:name="theme">light-spring</ac:parameter><ac:parameter ac:name="lang">Apache</ac:parameter><ac:parameter ac:name="expandFirst">true</ac:parameter><ac:parameter ac:name="globaltitle">multi title</ac:parameter><ac:plain-text-body><![CDATA[[test a]
 foo = bar
 
-[content]
+[MISSINGCONTENT]
 <VirtualHost>
   serverName = ${foo}
 </VirtualHost> ]]></ac:plain-text-body></ac:structured-macro>
