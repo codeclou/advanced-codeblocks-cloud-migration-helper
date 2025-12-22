@@ -14,6 +14,21 @@ class MacroStorageFormatParser:
         self.forceUUIDsZeroed = forceUUIDsZeroed
         self.util = Util(forceUUIDsZeroed)
 
+    def _split_macro_body_on_content_block(self, macro_body: str) -> tuple[str, str]:
+        if "[content]\r\n" in macro_body:
+            splitted = macro_body.split("[content]\r\n", 1)
+            return (splitted[0], splitted[1])
+        if "[content]\r" in macro_body:
+            splitted = macro_body.split("[content]\r", 1)
+            return (splitted[0], splitted[1])
+        if "[content]\n\r" in macro_body:
+            splitted = macro_body.split("[content]\n\r", 1)
+            return (splitted[0], splitted[1])
+        if "[content]\n" in macro_body:
+            splitted = macro_body.split("[content]\n", 1)
+            return (splitted[0], splitted[1])
+        return ("ERROR SPLITTING AT [CONTENT]", "ERROR: INVALID NEWLINE")
+
     def transform(self):
         builder = MacroStorageFormatBuilder(self.extensionkey, self.forceUUIDsZeroed)
         print("START > reading storage format file from: " + self.inputfile)
@@ -70,14 +85,16 @@ class MacroStorageFormatParser:
                             macro_code = child.text
                             macro_config = ""
                         elif macro_name == "advanced-codeblock-macro":
-                            if "[content]\n" not in child.text:
+                            if "[content]" not in child.text:
                                 print(
                                     ">> ERROR: no [content] element in macro body found!"
                                 )
                                 macro_code = "ERROR - COULD NOT PARSE"
                                 macro_config = "ERROR - COULD NOT PARSE"
                             else:
-                                config_and_code = child.text.split("[content]\n", 1)
+                                config_and_code = (
+                                    self._split_macro_body_on_content_block(child.text)
+                                )
                                 macro_code = config_and_code[1]
                                 macro_config = config_and_code[0]
                         elif macro_name == "advanced-remote-codeblock-macro":
