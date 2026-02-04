@@ -121,3 +121,14 @@ class TestMacroStorageFormatParser(unittest.TestCase):
         self.assertTrue(isinstance(result4, tuple))
         self.assertEqual(result4[0], "foo\n")
         self.assertEqual(result4[1], "bar")
+        # ###########################################################################
+        # CASE5: U+0020 : SPACE [SP] and U+00A0 : NO-BREAK SPACE [NBSP] combos
+        #
+        # GIVEN
+        macro_body5 = "foo\n[content]    \nbar"
+        # WHEN
+        result5 = parser._split_macro_body_on_content_block(macro_body5)
+        # THEN
+        self.assertTrue(isinstance(result5, tuple))
+        self.assertEqual(result5[0], "foo\n")
+        self.assertEqual(result5[1], "bar")

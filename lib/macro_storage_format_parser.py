@@ -2,7 +2,7 @@
 
 from lib.macro_storage_format_builder import MacroStorageFormatBuilder
 from lib.util import Util
-
+import re
 
 class MacroStorageFormatParser:
     def __init__(
@@ -15,18 +15,10 @@ class MacroStorageFormatParser:
         self.util = Util(forceUUIDsZeroed)
 
     def _split_macro_body_on_content_block(self, macro_body: str) -> tuple[str, str]:
-        if "[content]\r\n" in macro_body:
-            splitted = macro_body.split("[content]\r\n", 1)
-            return (splitted[0], splitted[1])
-        if "[content]\r" in macro_body:
-            splitted = macro_body.split("[content]\r", 1)
-            return (splitted[0], splitted[1])
-        if "[content]\n\r" in macro_body:
-            splitted = macro_body.split("[content]\n\r", 1)
-            return (splitted[0], splitted[1])
-        if "[content]\n" in macro_body:
-            splitted = macro_body.split("[content]\n", 1)
-            return (splitted[0], splitted[1])
+        if "[content]" in macro_body:
+            splitted = re.split(r'\[content\]\s*(\r\n|\r|\n\r|\n)', macro_body, maxsplit=1)
+            # re.split splits also the capturing group \n as [1]!
+            return (splitted[0], splitted[2])
         return ("ERROR SPLITTING AT [CONTENT]", "ERROR: INVALID NEWLINE")
 
     def transform(self):
