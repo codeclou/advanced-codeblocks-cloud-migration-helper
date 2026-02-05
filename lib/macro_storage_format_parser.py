@@ -18,7 +18,8 @@ class MacroStorageFormatParser:
         if "[content]" in macro_body:
             splitted = re.split(r'\[content\]\s*(\r\n|\r|\n\r|\n)', macro_body, maxsplit=1)
             # re.split splits also the capturing group \n as [1]!
-            return (splitted[0], splitted[2])
+            if len(splitted) > 2:
+              return (splitted[0], splitted[2])
         return ("ERROR SPLITTING AT [CONTENT]", "ERROR: INVALID NEWLINE")
 
     def transform(self):
