@@ -137,13 +137,13 @@ class MacroStorageFormatParser:
                                 + macro_param_remotefileurl
                             )
                         if ac_name == "remotefilehttpuser":
-                            macro_param_remotefilehttpuser = child.text
+                            macro_param_remotefilehttpuser = "****" # Since use of SecretStore passwords need to be reentered after cloud migration
                             print(
                                 "    macro param remote user : "
                                 + macro_param_remotefilehttpuser
                             )
                         if ac_name == "remotefilehttppassword":
-                            macro_param_remotefilehttppassword = child.text
+                            macro_param_remotefilehttppassword = "****" # Since use of SecretStore passwords need to be reentered after cloud migration
                             print(
                                 "    macro param remote pass : "
                                 + macro_param_remotefilehttppassword
